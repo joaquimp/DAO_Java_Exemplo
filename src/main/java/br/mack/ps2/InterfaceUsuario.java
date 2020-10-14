@@ -21,7 +21,7 @@ public class InterfaceUsuario {
 
     private void imprimirMenu() {
         int opc = 0;
-        do {
+        while(true) {
             System.out.println("\n==============");
             System.out.println("==== Menu ====");
             System.out.println("==============");
@@ -51,13 +51,12 @@ public class InterfaceUsuario {
                     break;
                 case 5:
                     System.out.println("tchau :)");
-                    break;
+                    return;
                 default:
                     System.out.println("Opção Inválida");
                     break;
             }
-
-        }while (opc != 5);
+        }
     }
 
     private void create() {
